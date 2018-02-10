@@ -147,12 +147,12 @@ if(val=="cos")
 }
 if(val=="envers")
 {
-    var x=document.getElementById("d").value;
-    document.getElementById("d").value=eval(1/x);
+    var x=document.getElementById("display").value;
+    document.getElementById("display").value=eval(1/x);
 }
 if(val=="sqrt")
 {
-    var x=document.getElementById("d").value;
-    document.getElementById("d").value=Math.sqrt(x);
+    var x=document.getElementById("display").value;
+    document.getElementById("display").value=Math.sqrt(x);
 }
 } 
