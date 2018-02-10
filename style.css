@@ -1,0 +1,26 @@
+textarea {
+    resize: none;
+    background-color: white;
+    font-size: 50px;
+    width: 400px;
+    height: 70px;
+    text-align: right;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ 
+button {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+    border: none;
+    transition: all .1s;
+}
+ 
+button:hover {
+    background-color: lightyellow;
+}
