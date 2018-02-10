@@ -136,13 +136,13 @@ function d(val){
 if(val=="sin")
 {
     var x=document.getElementById("display").value;
-    x= x * Math.PI;
+    x= x * Math.PI/180;
     document.getElementById("display").value=Math.sin(x);
 }
 if(val=="cos")
 {
     var x=document.getElementById("display").value;
-    x= x * Math.PI;
+    x= x * Math.PI/180;
     document.getElementById("display").value=Math.cos(x);
 }
 if(val=="envers")
