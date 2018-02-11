@@ -1,101 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-<table align="center" cellpadding="0" id="d">
-    <tr>
-        <td colspan="4"><textarea id="display" rows="1" disabled>0</textarea></td>
-
-    </tr>
- <tr>
-        <td colspan="2">
-            <button style="width: 100%" onclick="reset()">C</button>
-        </td>
-        <td>
-            <button onclick="signChange()">&plusmn;</button>
-        </td>
-        <td>
-            <button onclick="backspace()">&#x232B;</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button onclick="numPressed(7)">7</button>
-        </td>
-        <td>
-            <button onclick="numPressed(8)">8</button>
-        </td>
-        <td>
-            <button onclick="numPressed(9)">9</button>
-        </td>
-        <td>
-            <button id="divide" onclick="operation('/');highlight('divide')">&divide;</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button onclick="numPressed(4)">4</button>
-        </td>
-        <td>
-            <button onclick="numPressed(5)">5</button>
-        </td>
-        <td>
-            <button onclick="numPressed(6)">6</button>
-        </td>
-        <td>
-            <button id="multiply" onclick="operation('*');highlight('multiply')">&#10005;</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button onclick="numPressed(1)">1</button>
-        </td>
-        <td>
-            <button onclick="numPressed(2)">2</button>
-        </td>
-        <td>
-            <button onclick="numPressed(3)">3</button>
-        </td>
-        <td>
-            <button id="minus" onclick="operation('-');highlight('minus')">&#8722;</button>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <button style="width: 100%" onclick="numPressed(0)">0</button>
-        </td>
-        <td>
-            <button onclick="calculate()">=</button>
-        </td>
-        <td>
-            <button id="plus" onclick="operation('+');highlight('plus')">+</button>
-        </td>
-    </tr>
-	
-	
-	<tr>
-        <td align="center"> 
-		<button id="cos" value="cos" onclick='d("cos")'> cos </button>
-		</td>
-		
-		<td align="center">
-		<button id="sin" value="sin" onclick='d("sin")'> sin </button>
-		</td>
-		<td align="center">
-		<button id="tan" value="tan" onclick='d("tan")'> tan </button>
-		</td>
-		<td align="center">
-		<button id="sqrt" value="sqrt" onclick='d("sqrt")'> sqrt </button>
-		</td>
-
-    </tr>
-</table>
- 
+<script>
+    var calc = new Calculator();
+    $("body").append(calc.getElement());
+</script>
 </body>
-</html>
